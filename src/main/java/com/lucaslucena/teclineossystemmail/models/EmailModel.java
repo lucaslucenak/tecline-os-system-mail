@@ -23,6 +23,9 @@ public class EmailModel implements Serializable {
     private Long id;
 
     @Column
+    private Long os_id;
+
+    @Column
     private String owner_reference;
 
     @Column

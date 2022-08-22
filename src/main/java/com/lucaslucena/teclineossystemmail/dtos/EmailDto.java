@@ -10,6 +10,9 @@ import javax.validation.constraints.NotBlank;
 public class EmailDto {
 
     @Column
+    private Long os_id;
+
+    @Column
     @NotBlank
     private String owner_reference;
 
