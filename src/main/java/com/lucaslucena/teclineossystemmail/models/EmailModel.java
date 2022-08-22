@@ -23,7 +23,7 @@ public class EmailModel implements Serializable {
     private Long id;
 
     @Column
-    private String ownerReference;
+    private String owner_reference;
 
     @Column
     private String email_from;

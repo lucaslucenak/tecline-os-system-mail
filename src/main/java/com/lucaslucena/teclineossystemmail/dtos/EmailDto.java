@@ -11,7 +11,7 @@ public class EmailDto {
 
     @Column
     @NotBlank
-    private String ownerReference;
+    private String owner_reference;
 
     @Email
     @Column
