@@ -1,6 +1,7 @@
 package com.lucaslucena.teclineossystemmail.models;
 
 import com.lucaslucena.teclineossystemmail.enums.EmailStatus;
+import com.lucaslucena.teclineossystemmail.enums.EmailType;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,6 +25,10 @@ public class EmailModel implements Serializable {
 
     @Column
     private Long os_id;
+
+    @Column
+    @Enumerated(value = EnumType.STRING)
+    private EmailType email_type;
 
     @Column
     private String owner_reference;

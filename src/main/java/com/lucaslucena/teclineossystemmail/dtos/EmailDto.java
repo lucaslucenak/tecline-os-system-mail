@@ -1,8 +1,11 @@
 package com.lucaslucena.teclineossystemmail.dtos;
 
+import com.lucaslucena.teclineossystemmail.enums.EmailType;
 import lombok.Data;
 
 import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
@@ -11,6 +14,10 @@ public class EmailDto {
 
     @Column
     private Long os_id;
+
+    @Column
+    @Enumerated(value = EnumType.STRING)
+    private EmailType email_type;
 
     @Column
     @NotBlank
