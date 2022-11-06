@@ -20,11 +20,12 @@ spring:
     port: 587
     username: teclinecg@gmail.com
     password: zcpdypelwlmaozcz
-    mail:
-      smtp:
-        auth: true
-        starttls:
-          enable: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 #  mvc:
 #    pathmatch:
 #      matching-strategy: ant_path_matcher
